@@ -6,9 +6,6 @@ namespace ComboBoxTest
 {
     public class OtherVM : ViewModel
     {
-        public OtherVM() : base(true)
-        {
 
-        }
     }
 }

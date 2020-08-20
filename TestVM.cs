@@ -6,9 +6,6 @@ namespace ComboBoxTest
 {
     public class TestVM : ViewModel
     {
-        public TestVM() : base(true)
-        {
 
-        }
     }
 }

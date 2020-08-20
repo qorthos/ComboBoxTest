@@ -8,15 +8,9 @@ namespace ComboBoxTest
 {
     public abstract class ViewModel : ObservableObject
     {
-        protected VMManager VMManager;
 
-
-        public ViewModel(bool addToVMManager)
+        public ViewModel()
         {
-            VMManager = VMManager.Instance;
-
-            if (addToVMManager)
-                VMManager.AddVM(this);
         }
 
         protected virtual void OnNewGame()

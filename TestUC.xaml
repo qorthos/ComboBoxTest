@@ -9,6 +9,12 @@
     <Grid>
         <StackPanel>
             <Button Click="Button_Click">Switch To Other VM</Button>
+            <TextBlock>la la la</TextBlock>
+            <TextBlock>la la la</TextBlock>
+            <TextBlock>la la la</TextBlock>
+            <TextBlock>la la la</TextBlock>
+            <TextBlock>la la la</TextBlock>
+            <TextBlock>la la la</TextBlock>
             <ComboBox></ComboBox>
         </StackPanel>
     </Grid>

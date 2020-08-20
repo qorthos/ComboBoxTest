@@ -19,8 +19,6 @@ namespace ComboBoxTest
             }
         }
 
-        List<ViewModel> viewModels;
-
         private ViewModel _selectedViewModel;
 
         #region PROPERTIES
@@ -35,32 +33,8 @@ namespace ComboBoxTest
 
         public VMManager()
         {
-            viewModels = new List<ViewModel>();
+            
         }
-
-        public void AddVM(ViewModel vm)
-        {
-            viewModels.Add(vm);
-        }
-
-        public T GetVM<T>() where T : ViewModel, new()
-        {
-            Type type = typeof(T);
-
-            foreach (ViewModel vm in viewModels)
-            {
-                if (vm is T)
-                {
-                    return (T)vm;
-                }
-            }
-
-            var newVM = new T();
-            viewModels.Add(newVM);
-
-            return newVM;
-        }
-
 
         public void TransitionToVM(ViewModel nextVM)
         {
@@ -71,7 +45,7 @@ namespace ComboBoxTest
 
         public void TransitionToVM<T>() where T : ViewModel, new()
         {
-            SelectedViewModel = GetVM<T>();
+            SelectedViewModel = new T();
             SelectedViewModel.Focused();
         }
     }

@@ -8,9 +8,8 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
         <StackPanel>
-            <TextBlock>This is the OTHER UC</TextBlock>
+            <TextBlock>This is the OTHER UC without a combobox</TextBlock>
             <Button Click="Button_Click">Switch To TestVM</Button>
-            <ComboBox></ComboBox>
         </StackPanel>
     </Grid>
 </UserControl>
